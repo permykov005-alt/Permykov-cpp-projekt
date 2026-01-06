@@ -1,0 +1,19 @@
+#include <bits/stdc++.h>
+using namespace std;
+
+int main() {
+    int N;
+    
+    cout << "Введите N: ";
+    cin >> N;
+    
+    cout << "Чётные числа от 1 до " << N << ":" << endl;
+    
+    for (int i = 2; i <= N; i += 2) {
+        cout << i << " ";
+    }
+    
+    cout << endl;
+    
+    return 0;
+}
