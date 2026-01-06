@@ -1,0 +1,22 @@
+#include <bits/stdc++.h>
+using namespace std;
+
+int main() {
+    int a, b;
+    
+    cout << "Введите первое число: ";
+    cin >> a;
+    
+    cout << "Введите второе число: ";
+    cin >> b;
+    
+    int result_and = a & b;  
+    int result_or = a | b;   
+    int result_xor = a ^ b;  
+    
+    cout << "Результат побитового AND: " << result_and << endl;
+    cout << "Результат побитового OR: " << result_or << endl;
+    cout << "Результат побитового XOR: " << result_xor << endl;
+    
+    return 0;
+}
