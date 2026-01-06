@@ -1,0 +1,13 @@
+#include <bits/stdc++.h>
+using namespace std;
+
+int main() {
+    int n;
+    cout << "Введите число: ";
+    cin >> n;
+    
+    cout << "Квадрат: " << n * n << endl;
+    cout << "Куб: " << n * n * n << endl;
+    
+    return 0;
+}
