@@ -1,0 +1,20 @@
+#include <bits/stdc++.h>
+using namespace std;
+
+int main() {
+    const double USD_RATE = 85.0;
+    const double EUR_RATE = 100.0;
+    
+    double rubles;
+    
+    cout << "Введите сумму в рублях: ";
+    cin >> rubles;
+    
+    int dollars = rubles / USD_RATE;
+    int euros = rubles / EUR_RATE;
+    
+    cout << "В долларах: " << dollars << endl;
+    cout << "В евро: " << euros << endl;
+    
+    return 0;
+}
