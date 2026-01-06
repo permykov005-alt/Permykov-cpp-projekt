@@ -1,0 +1,15 @@
+#include <bits/stdc++.h>
+using namespace std;
+
+int main() {
+    double number;
+    
+    cout << "Введите число: ";
+    cin >> number;
+    
+    cout << "Как double: " << number << endl;
+    cout << "Как int: " << (int)number << endl;
+    cout << "Число не равно 0? " << boolalpha << (bool)number << endl;
+    
+    return 0;
+}
