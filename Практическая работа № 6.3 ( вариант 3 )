@@ -1,0 +1,18 @@
+#include <bits/stdc++.h>
+using namespace std;
+
+int main() {
+    string str1, str2;
+    
+    cout << "Введите первую строку: ";
+    getline(cin, str1);
+    
+    cout << "Введите вторую строку: ";
+    getline(cin, str2);
+    
+    string result = str1 + str2;
+    
+    cout << "Результат: " << result << endl;
+    
+    return 0;
+}
