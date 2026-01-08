@@ -1,0 +1,40 @@
+#include <bits/stdc++.h>
+using namespace std;
+class Product {
+    string name;
+    double price;
+    int quantity;
+    
+public:
+    Product(string n = "", double p = 0, int q = 0) : name(n), price(p), quantity(q) {}
+    
+    bool isAvailable() const { return quantity > 0; }
+    
+    void sell(int amount) {
+        if (amount > quantity) {
+            cout << "Недостаточно товара!" << endl;
+        } else {
+            quantity -= amount;
+        }
+    }
+    
+    void show() const {
+        cout << "Товар: " << name << endl
+             << "Цена: " << price << endl
+             << "Количество: " << quantity << endl
+             << "Статус: " << (isAvailable() ? "В наличии" : "Нет в наличии") << endl;
+    }
+};
+
+int main() {
+    Product p("Телефон", 19990, 5);
+    
+    cout << "Начальное состояние:" << endl;
+    p.show();
+    
+    p.sell(3);
+    cout << "\nПосле продажи 3 единиц:" << endl;
+    p.show();
+    
+    return 0;
+}
