@@ -1,0 +1,22 @@
+#include <bits/stdc++.h>
+using namespace std;
+int main() {
+    string words[] = {"bicycle", "jarmony", "flick", "sheep", "flick", "wolf"};
+    int n = 6; // 
+    bool result[6];
+    bool current = true;
+    
+    for (int i = 0; i < n; i++) {
+        result[i] = current;
+        if (words[i] == "flick") {
+            current = !current; 
+        }
+    }
+    cout << "[";
+    for (int i = 0; i < n; i++) {
+        cout << (result[i] ? "true" : "false");
+        if (i < n - 1) cout << ", ";
+    }
+    cout << "]" << endl;
+    return 0;
+}
